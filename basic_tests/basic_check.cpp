@@ -4,8 +4,18 @@
 
 #include "gtest/gtest.h"
 
+#if __cplusplus
+extern "C" {
+#endif
+
+#include "libft.h"
+
+#if __cplusplus
+}
+#endif
+
 TEST(basic_check, test_eq) {
-    EXPECT_EQ(1, 1);
+    EXPECT_EQ(ft_strlen("ok"), 1);
 }
 
 TEST(basic_check, test_neq) {
